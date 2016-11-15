@@ -6,7 +6,7 @@ class PhoneNumber
 
   def number
     unless @number.length == 10
-      if @number[0] == "1"
+      if @number.start_with? "1"
         @number[0] = ""
       end
     end
